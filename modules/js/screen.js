@@ -1,15 +1,13 @@
-/** 
+/**
  * Screen.js
- * the Area object
- * the Area object, inherits basic GamePiece
+ * Generic Screen object
+ * @inherits GamePiece.js
  */
- import GamePiece from './GamePiece.js';
+import GamePiece from './GamePiece.js';
 
+export default class Screen extends GamePiece {
 
- export default class Screen extends GamePiece {
-
- 	constructor (config) {
- 		super(config)
- 	}
-
- }
+  constructor (config) {
+    super(config); //init 'parent' GamePiece
+  }
+};

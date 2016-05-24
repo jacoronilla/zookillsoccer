@@ -11,17 +11,17 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
    - Go sudo su and type password.
    - Run "npm install grunt -g"
    - Type "exit" (takes you out of sudo)
-   - After the install is complete, run "grunt" in that window. The Terminal 
-     will watch for file changes, and automaticall re-compile your JavaScript 
+   - After the install is complete, run "grunt" in that window. The Terminal
+     will watch for file changes, and automatically re-compile your JavaScript 
      written in ES6 down to ES5, which most browsers need.
 3. In Terminal Window #2:
-   - Run "npm start" in Terminal window #2. 
+   - Run "npm start" in Terminal window #2.
    - The web server should start up.
 
 ## Using the boilerplate
 1. Make a copy so you have it for future projects
 2. Edit the JavaScript in the /modules folder
-3. Each time you save, you should see some action in Terminal Window #1 as 
+3. Each time you save, you should see some action in Terminal Window #1 as
    your JavaScript is "transpiled" and copied to the /dist folder
 
 ## Adding a Git Repository, and uploading
@@ -37,7 +37,7 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
 
 ## Adding new ES6 classes
 1. Create a new file, whose name is same as the class (e.g. Something.js for an ES6 class "Animal.js")
-2. Create the ES6 classes in the file. 
+2. Create the ES6 classes in the file.
 3. It may be useful to create inheritance classes in one files
      class Animal {...}
      class Mammal extends Mammal {...}
@@ -46,8 +46,7 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
    import Animal from './Animal.js'
    class Mammal extends Animal {...}
 3. Remember to add super() to the subclasses
-4. Export the ES6 class 
+4. Export the ES6 class
      export {Animal, Mammal}
 5. In the main file (index.js) do an ES6 class import
      import {Animal, Mammal} from './Animal.js'
-

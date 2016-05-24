@@ -1,10 +1,10 @@
 {
   "name": "zookillsoccer",
   "version": "1.0.0",
-  "description": "basic game coded in ES6 JavaScript.",
+  "description": "GWDA243 Object Oriented Scripting - basic game coded in ES6 JavaScript.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pindiespace/zookillsoccer.git"
+    "url": "https://github.com/jacoronilla/zookillsoccer.git"
   },
   "main": "index.js",
   "dependencies": {
@@ -32,6 +32,6 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pete Markiewicz",
+  "author": "Jacquelin Coronilla",
   "license": "ISC"
 }

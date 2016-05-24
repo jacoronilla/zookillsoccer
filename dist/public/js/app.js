@@ -2,108 +2,6 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _GamePiece2 = require('./GamePiece.js');
-
-var _GamePiece3 = _interopRequireDefault(_GamePiece2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /** 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Area.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Area object, inherits basic GamePiece
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var Area = function (_GamePiece) {
-  _inherits(Area, _GamePiece);
-
-  function Area(config) {
-    _classCallCheck(this, Area);
-
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Area).call(this, config));
-  }
-
-  return Area;
-}(_GamePiece3.default);
-
-exports.default = Area;
-
-},{"./GamePiece.js":3}],2:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Player = exports.Character = undefined;
-
-var _GamePiece2 = require('./GamePiece.js');
-
-var _GamePiece3 = _interopRequireDefault(_GamePiece2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /** 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Character.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Character object
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Area object, inherits basic GamePiece
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-/** 
- * @class Character
- * @extends GamePiece
- * @description generic character
- */
-
-
-var Character = function (_GamePiece) {
-  _inherits(Character, _GamePiece);
-
-  function Character(config) {
-    _classCallCheck(this, Character);
-
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Character).call(this, config));
-  }
-
-  return Character;
-}(_GamePiece3.default);
-
-/** 
- * @class Player
- * @extends Character
- * @description a Player object
- */
-
-
-var Player = function (_Character) {
-  _inherits(Player, _Character);
-
-  function Player(config) {
-    _classCallCheck(this, Player);
-
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Player).call(this, config));
-  }
-
-  return Player;
-}(Character);
-
-exports.Character = Character;
-exports.Player = Player;
-
-},{"./GamePiece.js":3}],3:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
@@ -178,106 +76,16 @@ var GamePiece = function () {
 
 exports.default = GamePiece;
 
-},{}],4:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _GamePiece2 = require('./GamePiece.js');
-
-var _GamePiece3 = _interopRequireDefault(_GamePiece2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /** 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Info.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Info object
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Area object, inherits basic GamePiece
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var Info = function (_GamePiece) {
-  _inherits(Info, _GamePiece);
-
-  function Info(config) {
-    _classCallCheck(this, Info);
-
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Info).call(this, config));
-  }
-
-  return Info;
-}(_GamePiece3.default);
-
-exports.default = Info;
-
-},{"./GamePiece.js":3}],5:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _GamePiece2 = require('./GamePiece.js');
-
-var _GamePiece3 = _interopRequireDefault(_GamePiece2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /** 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Screen.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Area object
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * the Area object, inherits basic GamePiece
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var Screen = function (_GamePiece) {
-  _inherits(Screen, _GamePiece);
-
-  function Screen(config) {
-    _classCallCheck(this, Screen);
-
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Screen).call(this, config));
-  }
-
-  return Screen;
-}(_GamePiece3.default);
-
-exports.default = Screen;
-
-},{"./GamePiece.js":3}],6:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 'use strict';
 
 var _GamePiece = require('./GamePiece.js');
 
 var _GamePiece2 = _interopRequireDefault(_GamePiece);
 
-var _Area = require('./Area.js');
-
-var _Area2 = _interopRequireDefault(_Area);
-
-var _Character = require('./Character.js');
-
-var _Info = require('./Info.js');
-
-var _Info2 = _interopRequireDefault(_Info);
-
-var _Screen = require('./Screen.js');
-
-var _Screen2 = _interopRequireDefault(_Screen);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/** 
+/**
  * Set up the game.
  */
 var config = {
@@ -285,18 +93,24 @@ var config = {
 };
 
 // Make some test game objects
-/** 
- * Create the game. Import the primary classes, and 'composit' 
+/**
+ * Create the game. Import the primary classes, and 'composit'
  * the overall Game object out of instances of the classes.
  */
 var game = new _GamePiece2.default(config);
 console.log(game.getName());
 
-var area = new _Area2.default(config);
-console.log(area.getName());
+var configScreen1 = {
+  name: 'Opening Screen'
+};
+var ascreen = new SCreen(configScreen1);
+console.log(ascree.getName());
 
-var character = new _Character.Character(config);
-var player = new _Character.Player(config);
+//var area = new Area(config);
+//console.log(area.getName());
 
-},{"./Area.js":1,"./Character.js":2,"./GamePiece.js":3,"./Info.js":4,"./Screen.js":5}]},{},[6])
-//# sourceMappingURL=data:application/json;charset:utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9icm93c2VyLXBhY2svX3ByZWx1ZGUuanMiLCJtb2R1bGVzL2pzL0FyZWEuanMiLCJtb2R1bGVzL2pzL0NoYXJhY3Rlci5qcyIsIm1vZHVsZXMvanMvR2FtZVBpZWNlLmpzIiwibW9kdWxlcy9qcy9JbmZvLmpzIiwibW9kdWxlcy9qcy9TY3JlZW4uanMiLCJtb2R1bGVzL2pzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7O0FDSUM7Ozs7Ozs7Ozs7Ozs7Ozs7SUFHcUIsSTs7O0FBRXBCLGdCQUFhLE1BQWIsRUFBcUI7QUFBQTs7QUFBQSxtRkFDZCxNQURjO0FBRXBCOzs7OztrQkFKbUIsSTs7Ozs7Ozs7OztBQ0lyQjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFFSyxTOzs7QUFFSixxQkFBYSxNQUFiLEVBQXFCO0FBQUE7O0FBQUEsd0ZBQ2QsTUFEYztBQUVwQjs7Ozs7Ozs7Ozs7O0lBU0ksTTs7O0FBRUwsa0JBQWEsTUFBYixFQUFxQjtBQUFBOztBQUFBLHFGQUNkLE1BRGM7QUFFcEI7OztFQUptQixTOztRQU9kLFMsR0FBQSxTO1FBQVcsTSxHQUFBLE07Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQ3ZCRSxTO0FBRWpCLHVCQUFhLFdBQWIsRUFBMEI7QUFBQTs7O0FBRXRCLGFBQUssSUFBTCxHQUFZLFlBQVksSUFBeEI7QUFDQSxhQUFLLElBQUwsR0FBWSxLQUFLLEtBQUwsRUFBWjtBQUNIOzs7Ozs7Ozs7O2dDQU1RO0FBQ0wsZ0JBQUksSUFBSSxJQUFJLElBQUosR0FBVyxPQUFYLEVBQVI7QUFDQSxnQkFBSSxPQUFPLFdBQVAsSUFBc0IsT0FBTyxPQUFPLFdBQVAsQ0FBbUIsR0FBMUIsS0FBa0MsVUFBNUQsRUFBd0U7QUFDcEUscUJBQUssWUFBWSxHQUFaLEVBQUwsQztBQUNIO0FBQ0QsZ0JBQUksT0FBTyx1Q0FBdUMsT0FBdkMsQ0FBK0MsT0FBL0MsRUFBd0QsVUFBVSxDQUFWLEVBQWE7QUFDNUUsb0JBQUksSUFBSSxDQUFDLElBQUksS0FBSyxNQUFMLEtBQWMsRUFBbkIsSUFBdUIsRUFBdkIsR0FBNEIsQ0FBcEM7QUFDQSxvQkFBSSxLQUFLLEtBQUwsQ0FBVyxJQUFFLEVBQWIsQ0FBSjtBQUNBLHVCQUFPLENBQUMsS0FBRyxHQUFILEdBQVMsQ0FBVCxHQUFjLElBQUUsR0FBRixHQUFNLEdBQXJCLEVBQTJCLFFBQTNCLENBQW9DLEVBQXBDLENBQVA7QUFDSCxhQUpVLENBQVg7QUFLQSxtQkFBTyxJQUFQO0FBQ0g7Ozs7Ozs7O2tDQUtVO0FBQ1AsbUJBQU8sS0FBSyxJQUFaO0FBQ0g7Ozs7Ozs7O2dDQUtRO0FBQ0wsbUJBQU8sS0FBSyxJQUFaO0FBQ0g7Ozs7OztrQkFyQ2dCLFM7Ozs7Ozs7OztBQ0xwQjs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFHcUIsSTs7O0FBRXBCLGdCQUFhLE1BQWIsRUFBcUI7QUFBQTs7QUFBQSxtRkFDZCxNQURjO0FBRXBCOzs7OztrQkFKbUIsSTs7Ozs7Ozs7O0FDSHJCOzs7Ozs7Ozs7Ozs7Ozs7OztJQUdxQixNOzs7QUFFcEIsa0JBQWEsTUFBYixFQUFxQjtBQUFBOztBQUFBLHFGQUNkLE1BRGM7QUFFcEI7Ozs7O2tCQUptQixNOzs7OztBQ0p0Qjs7OztBQUNBOzs7O0FBQ0E7O0FBQ0E7Ozs7QUFDQTs7Ozs7Ozs7O0FBS0EsSUFBSSxTQUFTO0FBQ1QsUUFBSztBQURJLENBQWI7Ozs7Ozs7QUFLQSxJQUFJLE9BQU8sd0JBQWMsTUFBZCxDQUFYO0FBQ0EsUUFBUSxHQUFSLENBQVksS0FBSyxPQUFMLEVBQVo7O0FBRUEsSUFBSSxPQUFPLG1CQUFTLE1BQVQsQ0FBWDtBQUNBLFFBQVEsR0FBUixDQUFZLEtBQUssT0FBTCxFQUFaOztBQUVBLElBQUksWUFBWSx5QkFBYyxNQUFkLENBQWhCO0FBQ0EsSUFBSSxTQUFTLHNCQUFXLE1BQVgsQ0FBYiIsImZpbGUiOiJnZW5lcmF0ZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlc0NvbnRlbnQiOlsiKGZ1bmN0aW9uIGUodCxuLHIpe2Z1bmN0aW9uIHMobyx1KXtpZighbltvXSl7aWYoIXRbb10pe3ZhciBhPXR5cGVvZiByZXF1aXJlPT1cImZ1bmN0aW9uXCImJnJlcXVpcmU7aWYoIXUmJmEpcmV0dXJuIGEobywhMCk7aWYoaSlyZXR1cm4gaShvLCEwKTt2YXIgZj1uZXcgRXJyb3IoXCJDYW5ub3QgZmluZCBtb2R1bGUgJ1wiK28rXCInXCIpO3Rocm93IGYuY29kZT1cIk1PRFVMRV9OT1RfRk9VTkRcIixmfXZhciBsPW5bb109e2V4cG9ydHM6e319O3Rbb11bMF0uY2FsbChsLmV4cG9ydHMsZnVuY3Rpb24oZSl7dmFyIG49dFtvXVsxXVtlXTtyZXR1cm4gcyhuP246ZSl9LGwsbC5leHBvcnRzLGUsdCxuLHIpfXJldHVybiBuW29dLmV4cG9ydHN9dmFyIGk9dHlwZW9mIHJlcXVpcmU9PVwiZnVuY3Rpb25cIiYmcmVxdWlyZTtmb3IodmFyIG89MDtvPHIubGVuZ3RoO28rKylzKHJbb10pO3JldHVybiBzfSkiLCIvKiogXG4gKiBBcmVhLmpzXG4gKiB0aGUgQXJlYSBvYmplY3QsIGluaGVyaXRzIGJhc2ljIEdhbWVQaWVjZVxuICovXG4gaW1wb3J0IEdhbWVQaWVjZSBmcm9tICcuL0dhbWVQaWVjZS5qcyc7XG5cblxuIGV4cG9ydCBkZWZhdWx0IGNsYXNzIEFyZWEgZXh0ZW5kcyBHYW1lUGllY2Uge1xuXG4gXHRjb25zdHJ1Y3RvciAoY29uZmlnKSB7XG4gXHRcdHN1cGVyKGNvbmZpZylcbiBcdH1cblxuIH0iLCIvKiogXG4gKiBDaGFyYWN0ZXIuanNcbiAqIHRoZSBDaGFyYWN0ZXIgb2JqZWN0XG4gKiB0aGUgQXJlYSBvYmplY3QsIGluaGVyaXRzIGJhc2ljIEdhbWVQaWVjZVxuICovXG5cbiAvKiogXG4gICogQGNsYXNzIENoYXJhY3RlclxuICAqIEBleHRlbmRzIEdhbWVQaWVjZVxuICAqIEBkZXNjcmlwdGlvbiBnZW5lcmljIGNoYXJhY3RlclxuICAqL1xuIGltcG9ydCBHYW1lUGllY2UgZnJvbSAnLi9HYW1lUGllY2UuanMnO1xuXG5jbGFzcyBDaGFyYWN0ZXIgZXh0ZW5kcyBHYW1lUGllY2Uge1xuXG4gXHRjb25zdHJ1Y3RvciAoY29uZmlnKSB7XG4gXHRcdHN1cGVyKGNvbmZpZylcbiBcdH1cblxuIH1cblxuLyoqIFxuICogQGNsYXNzIFBsYXllclxuICogQGV4dGVuZHMgQ2hhcmFjdGVyXG4gKiBAZGVzY3JpcHRpb24gYSBQbGF5ZXIgb2JqZWN0XG4gKi9cbiBjbGFzcyBQbGF5ZXIgZXh0ZW5kcyBDaGFyYWN0ZXIge1xuXG4gXHRjb25zdHJ1Y3RvciAoY29uZmlnKSB7XG4gXHRcdHN1cGVyKGNvbmZpZylcbiBcdH1cbiB9XG5cbmV4cG9ydCB7Q2hhcmFjdGVyLCBQbGF5ZXJ9O1xuIiwiLyoqIFxuICogR2FtZVBpZWNlLmpzXG4gKiBCYXNpYyBHYW1lIG9iamVjdFxuICpcbiAqIFRvIG1ha2UgdGhpcyB3b3JrLCB5b3UgbXVzdCBiZSBydW5uaW5nIHRoZSBCYWJlbCB0cmFuc3BpbGVyLCBcbiAqIGFuZCB3YXRjaGluZyBmb3IgY2hhbmdlcyBpbiB0aGlzIGZpbGUgd2l0aCBicm93c2VyaWZ5LiBUd28gXG4gKiBUZXJtaW5hbCB3aW5kb3dzIG5lZWQgdG8gYmUgb3BlbjpcbiAqIDEuIG9uZSB3aW5kb3cgd2hlcmUgeW91IHR5cGVkIHRoZSBjb21tYW5kIFwiZ3J1bnRcIlxuICogMi4gb25lIHdpbmRvdyB3aGVyZSB5b3UgdHlwZWQgdGhlIGNvbW1hbmQgXCJucG0gc3RhcnRcIlxuICovXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBHYW1lUGllY2Uge1xuXG4gICAgY29uc3RydWN0b3IgKGNyZWRlbnRpYWxzKSB7XG4gICAgXHQvL1RPRE86IHVzZSBzdXBlcigpO1xuICAgICAgICB0aGlzLm5hbWUgPSBjcmVkZW50aWFscy5uYW1lO1xuICAgICAgICB0aGlzLnV1aWQgPSB0aGlzLnNldElkKCk7XG4gICAgfVxuXG4gICAgLyoqIFxuICAgICAqIEdlbmVyYXRlIGEgdW5pcXVlIElEIGZvciBldmVyeSBnYW1lIG9iamVjdC5cbiAgICAgKiBAbGluayBodHRwOi8vc3RhY2tvdmVyZmxvdy5jb20vcXVlc3Rpb25zLzEwNTAzNC9jcmVhdGUtZ3VpZC11dWlkLWluLWphdmFzY3JpcHRcbiAgICAgKi9cbiAgICBzZXRJZCAoKSB7XG4gICAgICAgIHZhciBkID0gbmV3IERhdGUoKS5nZXRUaW1lKCk7XG4gICAgICAgIGlmICh3aW5kb3cucGVyZm9ybWFuY2UgJiYgdHlwZW9mIHdpbmRvdy5wZXJmb3JtYW5jZS5ub3cgPT09IFwiZnVuY3Rpb25cIikge1xuICAgICAgICAgICAgZCArPSBwZXJmb3JtYW5jZS5ub3coKTsgLy91c2UgaGlnaC1wcmVjaXNpb24gdGltZXIgaWYgYXZhaWxhYmxlXG4gICAgICAgIH1cbiAgICAgICAgdmFyIHV1aWQgPSAneHh4eHh4eHgteHh4eC00eHh4LXl4eHgteHh4eHh4eHh4eHh4Jy5yZXBsYWNlKC9beHldL2csIGZ1bmN0aW9uIChjKSB7XG4gICAgICAgICAgICB2YXIgciA9IChkICsgTWF0aC5yYW5kb20oKSoxNiklMTYgfCAwO1xuICAgICAgICAgICAgZCA9IE1hdGguZmxvb3IoZC8xNik7XG4gICAgICAgICAgICByZXR1cm4gKGM9PSd4JyA/IHIgOiAociYweDN8MHg4KSkudG9TdHJpbmcoMTYpO1xuICAgICAgICB9KTtcbiAgICAgICAgcmV0dXJuIHV1aWQ7XG4gICAgfVxuXG4gICAgLyoqIFxuICAgICAqIFJldHVybiB0aGUgZ2l2ZW4gbmFtZSBvZiB0aGlzIG9iamVjdC5cbiAgICAgKi9cbiAgICBnZXROYW1lICgpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMubmFtZTtcbiAgICB9XG5cbiAgICAvKiogXG4gICAgICogUmV0dXJuIHRoZSB1bmlxdWUgaWQgb2YgdGhpcyBvYmplY3QuXG4gICAgICovXG4gICAgZ2V0SWQgKCkge1xuICAgICAgICByZXR1cm4gdGhpcy51dWlkO1xuICAgIH1cbn1cblxuXG4iLCIvKiogXG4gKiBJbmZvLmpzXG4gKiB0aGUgSW5mbyBvYmplY3RcbiAqIHRoZSBBcmVhIG9iamVjdCwgaW5oZXJpdHMgYmFzaWMgR2FtZVBpZWNlXG4gKi9cbiBpbXBvcnQgR2FtZVBpZWNlIGZyb20gJy4vR2FtZVBpZWNlLmpzJztcblxuXG4gZXhwb3J0IGRlZmF1bHQgY2xhc3MgSW5mbyBleHRlbmRzIEdhbWVQaWVjZSB7XG5cbiBcdGNvbnN0cnVjdG9yIChjb25maWcpIHtcbiBcdFx0c3VwZXIoY29uZmlnKVxuIFx0fVxuXG4gfSIsIi8qKiBcbiAqIFNjcmVlbi5qc1xuICogdGhlIEFyZWEgb2JqZWN0XG4gKiB0aGUgQXJlYSBvYmplY3QsIGluaGVyaXRzIGJhc2ljIEdhbWVQaWVjZVxuICovXG4gaW1wb3J0IEdhbWVQaWVjZSBmcm9tICcuL0dhbWVQaWVjZS5qcyc7XG5cblxuIGV4cG9ydCBkZWZhdWx0IGNsYXNzIFNjcmVlbiBleHRlbmRzIEdhbWVQaWVjZSB7XG5cbiBcdGNvbnN0cnVjdG9yIChjb25maWcpIHtcbiBcdFx0c3VwZXIoY29uZmlnKVxuIFx0fVxuXG4gfSIsIi8qKiBcbiAqIENyZWF0ZSB0aGUgZ2FtZS4gSW1wb3J0IHRoZSBwcmltYXJ5IGNsYXNzZXMsIGFuZCAnY29tcG9zaXQnIFxuICogdGhlIG92ZXJhbGwgR2FtZSBvYmplY3Qgb3V0IG9mIGluc3RhbmNlcyBvZiB0aGUgY2xhc3Nlcy5cbiAqL1xuaW1wb3J0IEdhbWVQaWVjZSBmcm9tICcuL0dhbWVQaWVjZS5qcyc7XG5pbXBvcnQgQXJlYSBmcm9tICcuL0FyZWEuanMnO1xuaW1wb3J0IHtDaGFyYWN0ZXIsIFBsYXllcn0gZnJvbSAnLi9DaGFyYWN0ZXIuanMnO1xuaW1wb3J0IEluZm8gZnJvbSAnLi9JbmZvLmpzJztcbmltcG9ydCBTY3JlZW4gZnJvbSAnLi9TY3JlZW4uanMnO1xuXG4vKiogXG4gKiBTZXQgdXAgdGhlIGdhbWUuXG4gKi9cbnZhciBjb25maWcgPSB7IFxuICAgIG5hbWU6J0ZvcmVzdCBUcnVtcCBvciBEb25hbGQgR3VtcCBydWx6J1xufVxuXG4vLyBNYWtlIHNvbWUgdGVzdCBnYW1lIG9iamVjdHNcbnZhciBnYW1lID0gbmV3IEdhbWVQaWVjZShjb25maWcpO1xuY29uc29sZS5sb2coZ2FtZS5nZXROYW1lKCkpO1xuXG52YXIgYXJlYSA9IG5ldyBBcmVhKGNvbmZpZyk7XG5jb25zb2xlLmxvZyhhcmVhLmdldE5hbWUoKSk7XG5cbnZhciBjaGFyYWN0ZXIgPSBuZXcgQ2hhcmFjdGVyKGNvbmZpZyk7XG52YXIgcGxheWVyID0gbmV3IFBsYXllcihjb25maWcpO1xuIl19
+//var character = new Character(config);
+//var player = new Player(config);
+
+},{"./GamePiece.js":1}]},{},[2])
+//# sourceMappingURL=data:application/json;charset:utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9icm93c2VyLXBhY2svX3ByZWx1ZGUuanMiLCJtb2R1bGVzL2pzL0dhbWVQaWVjZS5qcyIsIm1vZHVsZXMvanMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUNVcUIsUztBQUVqQix1QkFBYSxXQUFiLEVBQTBCO0FBQUE7OztBQUV0QixhQUFLLElBQUwsR0FBWSxZQUFZLElBQXhCO0FBQ0EsYUFBSyxJQUFMLEdBQVksS0FBSyxLQUFMLEVBQVo7QUFDSDs7Ozs7Ozs7OztnQ0FNUTtBQUNMLGdCQUFJLElBQUksSUFBSSxJQUFKLEdBQVcsT0FBWCxFQUFSO0FBQ0EsZ0JBQUksT0FBTyxXQUFQLElBQXNCLE9BQU8sT0FBTyxXQUFQLENBQW1CLEdBQTFCLEtBQWtDLFVBQTVELEVBQXdFO0FBQ3BFLHFCQUFLLFlBQVksR0FBWixFQUFMLEM7QUFDSDtBQUNELGdCQUFJLE9BQU8sdUNBQXVDLE9BQXZDLENBQStDLE9BQS9DLEVBQXdELFVBQVUsQ0FBVixFQUFhO0FBQzVFLG9CQUFJLElBQUksQ0FBQyxJQUFJLEtBQUssTUFBTCxLQUFjLEVBQW5CLElBQXVCLEVBQXZCLEdBQTRCLENBQXBDO0FBQ0Esb0JBQUksS0FBSyxLQUFMLENBQVcsSUFBRSxFQUFiLENBQUo7QUFDQSx1QkFBTyxDQUFDLEtBQUcsR0FBSCxHQUFTLENBQVQsR0FBYyxJQUFFLEdBQUYsR0FBTSxHQUFyQixFQUEyQixRQUEzQixDQUFvQyxFQUFwQyxDQUFQO0FBQ0gsYUFKVSxDQUFYO0FBS0EsbUJBQU8sSUFBUDtBQUNIOzs7Ozs7OztrQ0FLVTtBQUNQLG1CQUFPLEtBQUssSUFBWjtBQUNIOzs7Ozs7OztnQ0FLUTtBQUNMLG1CQUFPLEtBQUssSUFBWjtBQUNIOzs7Ozs7a0JBckNnQixTOzs7OztBQ05yQjs7Ozs7Ozs7O0FBS0EsSUFBSSxTQUFTO0FBQ1QsUUFBSztBQURJLENBQWI7Ozs7Ozs7QUFLQSxJQUFJLE9BQU8sd0JBQWMsTUFBZCxDQUFYO0FBQ0EsUUFBUSxHQUFSLENBQVksS0FBSyxPQUFMLEVBQVo7O0FBRUEsSUFBSSxnQkFBZ0I7QUFDbEIsUUFBTTtBQURZLENBQXBCO0FBR0EsSUFBSSxVQUFVLElBQUksTUFBSixDQUFXLGFBQVgsQ0FBZDtBQUNBLFFBQVEsR0FBUixDQUFZLE9BQU8sT0FBUCxFQUFaIiwiZmlsZSI6ImdlbmVyYXRlZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24gZSh0LG4scil7ZnVuY3Rpb24gcyhvLHUpe2lmKCFuW29dKXtpZighdFtvXSl7dmFyIGE9dHlwZW9mIHJlcXVpcmU9PVwiZnVuY3Rpb25cIiYmcmVxdWlyZTtpZighdSYmYSlyZXR1cm4gYShvLCEwKTtpZihpKXJldHVybiBpKG8sITApO3ZhciBmPW5ldyBFcnJvcihcIkNhbm5vdCBmaW5kIG1vZHVsZSAnXCIrbytcIidcIik7dGhyb3cgZi5jb2RlPVwiTU9EVUxFX05PVF9GT1VORFwiLGZ9dmFyIGw9bltvXT17ZXhwb3J0czp7fX07dFtvXVswXS5jYWxsKGwuZXhwb3J0cyxmdW5jdGlvbihlKXt2YXIgbj10W29dWzFdW2VdO3JldHVybiBzKG4/bjplKX0sbCxsLmV4cG9ydHMsZSx0LG4scil9cmV0dXJuIG5bb10uZXhwb3J0c312YXIgaT10eXBlb2YgcmVxdWlyZT09XCJmdW5jdGlvblwiJiZyZXF1aXJlO2Zvcih2YXIgbz0wO288ci5sZW5ndGg7bysrKXMocltvXSk7cmV0dXJuIHN9KSIsIi8qKiBcbiAqIEdhbWVQaWVjZS5qc1xuICogQmFzaWMgR2FtZSBvYmplY3RcbiAqXG4gKiBUbyBtYWtlIHRoaXMgd29yaywgeW91IG11c3QgYmUgcnVubmluZyB0aGUgQmFiZWwgdHJhbnNwaWxlciwgXG4gKiBhbmQgd2F0Y2hpbmcgZm9yIGNoYW5nZXMgaW4gdGhpcyBmaWxlIHdpdGggYnJvd3NlcmlmeS4gVHdvIFxuICogVGVybWluYWwgd2luZG93cyBuZWVkIHRvIGJlIG9wZW46XG4gKiAxLiBvbmUgd2luZG93IHdoZXJlIHlvdSB0eXBlZCB0aGUgY29tbWFuZCBcImdydW50XCJcbiAqIDIuIG9uZSB3aW5kb3cgd2hlcmUgeW91IHR5cGVkIHRoZSBjb21tYW5kIFwibnBtIHN0YXJ0XCJcbiAqL1xuZXhwb3J0IGRlZmF1bHQgY2xhc3MgR2FtZVBpZWNlIHtcblxuICAgIGNvbnN0cnVjdG9yIChjcmVkZW50aWFscykge1xuICAgIFx0Ly9UT0RPOiB1c2Ugc3VwZXIoKTtcbiAgICAgICAgdGhpcy5uYW1lID0gY3JlZGVudGlhbHMubmFtZTtcbiAgICAgICAgdGhpcy51dWlkID0gdGhpcy5zZXRJZCgpO1xuICAgIH1cblxuICAgIC8qKiBcbiAgICAgKiBHZW5lcmF0ZSBhIHVuaXF1ZSBJRCBmb3IgZXZlcnkgZ2FtZSBvYmplY3QuXG4gICAgICogQGxpbmsgaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMDUwMzQvY3JlYXRlLWd1aWQtdXVpZC1pbi1qYXZhc2NyaXB0XG4gICAgICovXG4gICAgc2V0SWQgKCkge1xuICAgICAgICB2YXIgZCA9IG5ldyBEYXRlKCkuZ2V0VGltZSgpO1xuICAgICAgICBpZiAod2luZG93LnBlcmZvcm1hbmNlICYmIHR5cGVvZiB3aW5kb3cucGVyZm9ybWFuY2Uubm93ID09PSBcImZ1bmN0aW9uXCIpIHtcbiAgICAgICAgICAgIGQgKz0gcGVyZm9ybWFuY2Uubm93KCk7IC8vdXNlIGhpZ2gtcHJlY2lzaW9uIHRpbWVyIGlmIGF2YWlsYWJsZVxuICAgICAgICB9XG4gICAgICAgIHZhciB1dWlkID0gJ3h4eHh4eHh4LXh4eHgtNHh4eC15eHh4LXh4eHh4eHh4eHh4eCcucmVwbGFjZSgvW3h5XS9nLCBmdW5jdGlvbiAoYykge1xuICAgICAgICAgICAgdmFyIHIgPSAoZCArIE1hdGgucmFuZG9tKCkqMTYpJTE2IHwgMDtcbiAgICAgICAgICAgIGQgPSBNYXRoLmZsb29yKGQvMTYpO1xuICAgICAgICAgICAgcmV0dXJuIChjPT0neCcgPyByIDogKHImMHgzfDB4OCkpLnRvU3RyaW5nKDE2KTtcbiAgICAgICAgfSk7XG4gICAgICAgIHJldHVybiB1dWlkO1xuICAgIH1cblxuICAgIC8qKiBcbiAgICAgKiBSZXR1cm4gdGhlIGdpdmVuIG5hbWUgb2YgdGhpcyBvYmplY3QuXG4gICAgICovXG4gICAgZ2V0TmFtZSAoKSB7XG4gICAgICAgIHJldHVybiB0aGlzLm5hbWU7XG4gICAgfVxuXG4gICAgLyoqIFxuICAgICAqIFJldHVybiB0aGUgdW5pcXVlIGlkIG9mIHRoaXMgb2JqZWN0LlxuICAgICAqL1xuICAgIGdldElkICgpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMudXVpZDtcbiAgICB9XG59XG5cblxuIiwiLyoqXG4gKiBDcmVhdGUgdGhlIGdhbWUuIEltcG9ydCB0aGUgcHJpbWFyeSBjbGFzc2VzLCBhbmQgJ2NvbXBvc2l0J1xuICogdGhlIG92ZXJhbGwgR2FtZSBvYmplY3Qgb3V0IG9mIGluc3RhbmNlcyBvZiB0aGUgY2xhc3Nlcy5cbiAqL1xuaW1wb3J0IEdhbWVQaWVjZSBmcm9tICcuL0dhbWVQaWVjZS5qcyc7XG5cbi8qKlxuICogU2V0IHVwIHRoZSBnYW1lLlxuICovXG52YXIgY29uZmlnID0ge1xuICAgIG5hbWU6J0ZvcmVzdCBUcnVtcCBvciBEb25hbGQgR3VtcCBydWx6J1xufVxuXG4vLyBNYWtlIHNvbWUgdGVzdCBnYW1lIG9iamVjdHNcbnZhciBnYW1lID0gbmV3IEdhbWVQaWVjZShjb25maWcpO1xuY29uc29sZS5sb2coZ2FtZS5nZXROYW1lKCkpO1xuXG52YXIgY29uZmlnU2NyZWVuMSA9IHtcbiAgbmFtZTogJ09wZW5pbmcgU2NyZWVuJ1xufVxudmFyIGFzY3JlZW4gPSBuZXcgU0NyZWVuKGNvbmZpZ1NjcmVlbjEpO1xuY29uc29sZS5sb2coYXNjcmVlLmdldE5hbWUoKSk7XG5cbi8vdmFyIGFyZWEgPSBuZXcgQXJlYShjb25maWcpO1xuLy9jb25zb2xlLmxvZyhhcmVhLmdldE5hbWUoKSk7XG5cbi8vdmFyIGNoYXJhY3RlciA9IG5ldyBDaGFyYWN0ZXIoY29uZmlnKTtcbi8vdmFyIHBsYXllciA9IG5ldyBQbGF5ZXIoY29uZmlnKTtcbiJdfQ==
