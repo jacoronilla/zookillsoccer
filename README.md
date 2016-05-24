@@ -1,4 +1,5 @@
 # zookillsoccer
+<<<<<<< HEAD
 ---------------------
 
 A basic game designed to teach concepts in OOP programming. Derived from es6-boilerplate on this same site.
@@ -12,7 +13,7 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
    - Run "npm install grunt -g"
    - Type "exit" (takes you out of sudo)
    - After the install is complete, run "grunt" in that window. The Terminal
-     will watch for file changes, and automatically re-compile your JavaScript 
+     will watch for file changes, and automatically re-compile your JavaScript
      written in ES6 down to ES5, which most browsers need.
 3. In Terminal Window #2:
    - Run "npm start" in Terminal window #2.
@@ -30,7 +31,7 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
 3. Navigate into the default directory of the project
 4. "git init"
 5. "git remote add origin https://github.com/your_username/your_projectname.git"
-6. "git add *" (add all changed files to upload)
+6. "git add * " (add all changed files to upload)
 7. "git status" (check that changed files were added)
 8. "git commit -m 'first upload'" (commit to upload with this "snapshot")
 9. "git push origin master" (you'll be prompted for username and pwd)
@@ -50,3 +51,6 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
      export {Animal, Mammal}
 5. In the main file (index.js) do an ES6 class import
      import {Animal, Mammal} from './Animal.js'
+=======
+GWDA243 Object Oriented Scripting - zookillsoccer game
+>>>>>>> origin/master
