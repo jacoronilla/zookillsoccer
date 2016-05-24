@@ -1,5 +1,4 @@
 # zookillsoccer
-<<<<<<< HEAD
 ---------------------
 
 A basic game designed to teach concepts in OOP programming. Derived from es6-boilerplate on this same site.
@@ -53,4 +52,3 @@ A basic game designed to teach concepts in OOP programming. Derived from es6-boi
      import {Animal, Mammal} from './Animal.js'
 =======
 GWDA243 Object Oriented Scripting - zookillsoccer game
->>>>>>> origin/master
